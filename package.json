@@ -1,0 +1,49 @@
+{
+  "name": "react-native-modal-bottom-alert",
+  "title": "React Native Modal Bottom Alert",
+  "version": "1.0.0",
+  "description": "Modal Bottom Alert for React Native Android, and IOS",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "assets",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Julius/react-native-modal-bottom-alert.git",
+    "baseUrl": "https://github.com/M-Julius/react-native-modal-bottom-alert"
+  },
+  "keywords": [
+    "react-native",
+    "alert",
+    "simple-alert",
+    "best-alert",
+    "dialog",
+    "android",
+    "ios"
+  ],
+  "author": {
+    "name": "M Julius",
+    "email": "mjulius.dev@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "lottie-react-native": "^3.5.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "lottie-react-native": "^3.5.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  },
+  "dependencies": {}
+}
