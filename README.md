@@ -88,10 +88,8 @@ let App = () => (
 
 const Root = () => (
   <Provider store={store}>
-    <ReduxNetworkProvider>
-      <App />
-      <ModalBottomAlert ref={(ref) => setAlertBottomRef(ref) }/>
-    </ReduxNetworkProvider>
+    <App />
+    <ModalBottomAlert ref={(ref) => setAlertBottomRef(ref) }/>
   </Provider>
 );
 ```
