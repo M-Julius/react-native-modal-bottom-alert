@@ -9,7 +9,7 @@
 - [Set Global](#set-global)
 - [Props](#props)
 
-### Installation
+## Installation
 ```bash
 $ yarn add react-native-modal-bottom-alert lottie-react-native
 ```
@@ -28,6 +28,11 @@ onOpenAlert() {
 }
 
 onOpenAlertButtonPressed() {
+    // onOpenAlert parameters: type, title, message, function
+    // parameter type: 'success', 'info', 'error'
+    // parameter title: 'string'
+    // parameter message: 'string'
+    // parameter function: function, default null'
     this.modalBottom.onOpenAlert('error', 'This Title', 'This Message Example Error', () => console.log('This Button Try Again Pressed'))
 }
 
@@ -52,7 +57,7 @@ return (
 
 ##### 1. Create Service For Alert
 ```js
-// Service/BottomAlert.js
+// BottomAlert.js
 let alert
 
 function setAlertBottomRef(ref) {
@@ -77,7 +82,7 @@ import store from './reduxStore';
 import React from 'react';
 import { Provider } from 'react-redux';
 import ModalBottomAlert from 'react-native-modal-bottom-alert';
-import { setAlertBottomRef } from './Service/BottomAlert';
+import { setAlertBottomRef } from './BottomAlert'; // Add This For Set Alert
 
 let App = () => (
   <Navigator>
@@ -89,7 +94,8 @@ let App = () => (
 const Root = () => (
   <Provider store={store}>
     <App />
-    <ModalBottomAlert ref={(ref) => setAlertBottomRef(ref) }/>
+    {/* Add This */}
+    <ModalBottomAlert ref={(ref) => setAlertBottomRef(ref) }/> 
   </Provider>
 );
 ```
@@ -99,7 +105,7 @@ const Root = () => (
 // Screen.js
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { BottomAlert } from './Service/BottomAlert';
+import { BottomAlert } from './BottomAlert'; // Add This On Your Screen For Call Alert
 
 export default class App extends Component {
 
@@ -144,12 +150,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
 
 ```
