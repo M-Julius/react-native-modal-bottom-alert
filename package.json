@@ -1,7 +1,7 @@
 {
   "name": "react-native-modal-bottom-alert",
   "title": "React Native Modal Bottom Alert",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Modal Bottom Alert for React Native Android, and IOS",
   "main": "index.js",
   "files": [
@@ -25,7 +25,9 @@
     "best-alert",
     "dialog",
     "android",
-    "ios"
+    "ios",
+    "bottom alert",
+    "lottie"
   ],
   "author": {
     "name": "M Julius",
