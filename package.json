@@ -1,12 +1,13 @@
 {
   "name": "react-native-modal-bottom-alert",
   "title": "React Native Modal Bottom Alert",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Modal Bottom Alert for React Native Android, and IOS",
   "main": "index.js",
   "files": [
     "README.md",
     "assets",
+    "src",
     "index.d.ts",
     "index.js"
   ],

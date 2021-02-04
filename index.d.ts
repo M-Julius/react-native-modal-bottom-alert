@@ -11,12 +11,25 @@ export interface BottomAlertProps {
 
 export type AlertType = | 'info' | 'success' | 'error'
 
-declare class BottomAlert extends React.Component<BottomAlertProps> {
+
+export function showBottomAlert(
+    type: AlertType,
+    title: string,
+    message: string,
+    action: Function
+): void
+
+
+export function useRefBottomAlert(
+    ref: Function,
+): void
+
+
+export class BottomAlert extends React.Component<BottomAlertProps> {
     onOpenAlert(
         type: AlertType,
         title: string,
         message: string,
+        action: Function
     ): void
 }
-
-export default BottomAlert;

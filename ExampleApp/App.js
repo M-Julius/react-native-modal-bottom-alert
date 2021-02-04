@@ -10,7 +10,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import ModalBottomAlert from 'react-native-modal-bottom-alert';
+import { BottomAlert } from 'react-native-modal-bottom-alert';
 
 export default class App extends Component {
 
@@ -40,7 +40,7 @@ export default class App extends Component {
           onPress={() => this.modalBottom.onOpenAlert('success', 'This Title', 'This Message Example Success')}
         />
 
-        <ModalBottomAlert
+        <BottomAlert
           ref={(ref) => this.modalBottom = ref}
         />
       </View>
@@ -59,10 +59,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
